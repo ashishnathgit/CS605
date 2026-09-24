@@ -1,7 +1,7 @@
 import heapq
 
 class Node:
-    def __init__(self, name, heuristic):
+    def __ini__(self, name, heuristic):
         self.name = name
         self.h = heuristic  # Heuristic value: h(n)
         
