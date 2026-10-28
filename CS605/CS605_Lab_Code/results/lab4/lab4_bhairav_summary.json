@@ -1,0 +1,38 @@
+{
+  "energy": 0.0,
+  "components": {
+    "leaps": 0.0,
+    "chalan": 0.0,
+    "nyaas": 0.0,
+    "start": 0.0,
+    "vadi_samvadi": 0.0,
+    "phrases": 0.0,
+    "monotony": 0.0
+  },
+  "phrases_found": [
+    "G m d d P",
+    "G m r r S",
+    "d N S'",
+    "S' N d P",
+    "m G r S",
+    "S r G m",
+    "d P m G",
+    "N. S r S"
+  ],
+  "melody": [
+    "N. S r S r G m d",
+    "d P N d P m G r",
+    "S G r m d d N S'",
+    "N d P G m r r S"
+  ],
+  "restart_energies": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    1.0
+  ]
+}

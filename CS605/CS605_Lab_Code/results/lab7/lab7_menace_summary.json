@@ -1,0 +1,29 @@
+{
+  "positions_X_to_move_canonical": 338,
+  "random opponent": {
+    "last500_mean": {
+      "X": 0.8587999999999999,
+      "D": 0.0816,
+      "O": 0.0596
+    },
+    "boxes_used": 331,
+    "first_box": {
+      "4": 4921,
+      "0": 1293,
+      "1": 1054
+    }
+  },
+  "perfect (minimax) opponent": {
+    "last500_mean": {
+      "X": 0.0,
+      "D": 0.9996,
+      "O": 0.0004
+    },
+    "boxes_used": 36,
+    "first_box": {
+      "4": 2960,
+      "0": 0,
+      "1": 0
+    }
+  }
+}

@@ -1,0 +1,87 @@
+==============================================================================
+Missionaries & Cannibals
+  raw state-space size  = 32, valid (safe) states = 20
+  reachable from start  = 16, dead-end states = 0
+  loop-free solution paths: 4; lengths = [11]
+
+--- Missionaries & Cannibals: BFS ---
+solution length = 11 moves, expanded = 13, generated = 15, max frontier = 3, explored/reached = 14, time = 0.225 ms, peak memory = 6.5 KiB
+   0. start                  (3, 3, 1)  left=MMMCCC <B> ~~~     right=-
+   1. 0M2C L->R              (3, 1, 0)  left=MMMC       ~~~ <B> right=CC
+   2. 0M1C R->L              (3, 2, 1)  left=MMMCC  <B> ~~~     right=C
+   3. 0M2C L->R              (3, 0, 0)  left=MMM        ~~~ <B> right=CCC
+   4. 0M1C R->L              (3, 1, 1)  left=MMMC   <B> ~~~     right=CC
+   5. 2M0C L->R              (1, 1, 0)  left=MC         ~~~ <B> right=MMCC
+   6. 1M1C R->L              (2, 2, 1)  left=MMCC   <B> ~~~     right=MC
+   7. 2M0C L->R              (0, 2, 0)  left=CC         ~~~ <B> right=MMMC
+   8. 0M1C R->L              (0, 3, 1)  left=CCC    <B> ~~~     right=MMM
+   9. 0M2C L->R              (0, 1, 0)  left=C          ~~~ <B> right=MMMCC
+  10. 0M1C R->L              (0, 2, 1)  left=CC     <B> ~~~     right=MMMC
+  11. 0M2C L->R              (0, 0, 0)  left=-          ~~~ <B> right=MMMCCC
+
+--- Missionaries & Cannibals: DFS ---
+solution length = 11 moves, expanded = 12, generated = 15, max frontier = 3, explored/reached = 12, time = 0.218 ms, peak memory = 4.7 KiB
+   0. start                  (3, 3, 1)  left=MMMCCC <B> ~~~     right=-
+   1. 0M2C L->R              (3, 1, 0)  left=MMMC       ~~~ <B> right=CC
+   2. 0M1C R->L              (3, 2, 1)  left=MMMCC  <B> ~~~     right=C
+   3. 0M2C L->R              (3, 0, 0)  left=MMM        ~~~ <B> right=CCC
+   4. 0M1C R->L              (3, 1, 1)  left=MMMC   <B> ~~~     right=CC
+   5. 2M0C L->R              (1, 1, 0)  left=MC         ~~~ <B> right=MMCC
+   6. 1M1C R->L              (2, 2, 1)  left=MMCC   <B> ~~~     right=MC
+   7. 2M0C L->R              (0, 2, 0)  left=CC         ~~~ <B> right=MMMC
+   8. 0M1C R->L              (0, 3, 1)  left=CCC    <B> ~~~     right=MMM
+   9. 0M2C L->R              (0, 1, 0)  left=C          ~~~ <B> right=MMMCC
+  10. 0M1C R->L              (0, 2, 1)  left=CC     <B> ~~~     right=MMMC
+  11. 0M2C L->R              (0, 0, 0)  left=-          ~~~ <B> right=MMMCCC
+==============================================================================
+Rabbit Leap
+  raw state-space size  = 140
+  reachable from start  = 72, dead-end states = 13
+  loop-free solution paths: 2; lengths = [15]
+
+--- Rabbit Leap: BFS ---
+solution length = 15 moves, expanded = 70, generated = 72, max frontier = 8, explored/reached = 71, time = 0.723 ms, peak memory = 13.1 KiB
+   0. start                  E E E _ W W W
+   1. E@2->3 (step)          E E _ E W W W
+   2. W@4->2 (jump)          E E W E _ W W
+   3. W@5->4 (step)          E E W E W _ W
+   4. E@3->5 (jump)          E E W _ W E W
+   5. E@1->3 (jump)          E _ W E W E W
+   6. E@0->1 (step)          _ E W E W E W
+   7. W@2->0 (jump)          W E _ E W E W
+   8. W@4->2 (jump)          W E W E _ E W
+   9. W@6->4 (jump)          W E W E W E _
+  10. E@5->6 (step)          W E W E W _ E
+  11. E@3->5 (jump)          W E W _ W E E
+  12. E@1->3 (jump)          W _ W E W E E
+  13. W@2->1 (step)          W W _ E W E E
+  14. W@4->2 (jump)          W W W E _ E E
+  15. E@3->4 (step)          W W W _ E E E
+
+--- Rabbit Leap: DFS ---
+solution length = 15 moves, expanded = 33, generated = 40, max frontier = 8, explored/reached = 33, time = 0.484 ms, peak memory = 9.0 KiB
+   0. start                  E E E _ W W W
+   1. E@2->3 (step)          E E _ E W W W
+   2. W@4->2 (jump)          E E W E _ W W
+   3. W@5->4 (step)          E E W E W _ W
+   4. E@3->5 (jump)          E E W _ W E W
+   5. E@1->3 (jump)          E _ W E W E W
+   6. E@0->1 (step)          _ E W E W E W
+   7. W@2->0 (jump)          W E _ E W E W
+   8. W@4->2 (jump)          W E W E _ E W
+   9. W@6->4 (jump)          W E W E W E _
+  10. E@5->6 (step)          W E W E W _ E
+  11. E@3->5 (jump)          W E W _ W E E
+  12. E@1->3 (jump)          W _ W E W E E
+  13. W@2->1 (step)          W W _ E W E E
+  14. W@4->2 (jump)          W W W E _ E E
+  15. E@3->4 (step)          W W W _ E E E
+
+Rabbit-leap scaling (k rabbits on each side)
+ k      |S|   reach  len  BFS exp BFS maxQ  DFS exp DFS maxStk
+ 1        6       6    3        4        2        3          2
+ 2       30      23    8       21        4       13          6
+ 3      140      72   15       70        8       33          8
+ 4      630     195   24      193       16       80         13
+ 5     2772     476   35      474       24      163         16
+ 6    12012    1089   48     1087       40      349         23

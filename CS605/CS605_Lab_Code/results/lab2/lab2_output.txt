@@ -1,0 +1,86 @@
+==========================================================================================
+TC1 identical
+  A1  B1  ALIGN   d=0.000  PLAGIARISED
+  A2  B2  ALIGN   d=0.000  PLAGIARISED
+  A3  B3  ALIGN   d=0.000  PLAGIARISED
+  A4  B4  ALIGN   d=0.000  PLAGIARISED
+  A5  B5  ALIGN   d=0.000  PLAGIARISED
+  A6  B6  ALIGN   d=0.000  PLAGIARISED
+  A7  B7  ALIGN   d=0.000  PLAGIARISED
+  A8  B8  ALIGN   d=0.000  PLAGIARISED
+  total cost = 0.000, mean aligned distance = 0.000, flagged fraction of B = 1.00
+  h0: expanded=   8 generated=  25 lev_calls=  8/64 cost=0.000 time=5.48 ms
+  h1: expanded=   8 generated=  25 lev_calls=  8/64 cost=0.000 time=5.69 ms
+  h2: expanded=   8 generated=  25 lev_calls=  8/64 cost=0.000 time=5.61 ms
+==========================================================================================
+TC2 slightly modified
+  A1  B1  ALIGN   d=0.163  PLAGIARISED
+  A2  B2  ALIGN   d=0.183  PLAGIARISED
+  A3  B3  ALIGN   d=0.114  PLAGIARISED
+  A4  B4  ALIGN   d=0.265  PLAGIARISED
+  A5  B5  ALIGN   d=0.254  PLAGIARISED
+  A6  B6  ALIGN   d=0.138  PLAGIARISED
+  A7  B7  ALIGN   d=0.202  PLAGIARISED
+  A8  B8  ALIGN   d=0.163  PLAGIARISED
+  total cost = 1.481, mean aligned distance = 0.185, flagged fraction of B = 1.00
+  h0: expanded=  28 generated=  85 lev_calls= 28/64 cost=1.481 time=20.27 ms
+  h1: expanded=  16 generated=  49 lev_calls= 16/64 cost=1.481 time=11.31 ms
+  h2: expanded=  16 generated=  49 lev_calls= 16/64 cost=1.481 time=11.17 ms
+==========================================================================================
+TC3 completely different
+  A1  B1  ALIGN   d=0.696  different
+  A2  B2  ALIGN   d=0.750  different
+  A3  B3  ALIGN   d=0.800  different
+  A4  B4  ALIGN   d=0.759  different
+  A5  B5  ALIGN   d=0.709  different
+  A6  B6  ALIGN   d=0.770  different
+  A7  B7  ALIGN   d=0.766  different
+  A8  B8  ALIGN   d=0.729  different
+  total cost = 5.979, mean aligned distance = 0.747, flagged fraction of B = 0.00
+  h0: expanded=  80 generated= 209 lev_calls= 64/64 cost=5.979 time=44.41 ms
+  h1: expanded=  53 generated= 160 lev_calls= 53/64 cost=5.979 time=35.26 ms
+  h2: expanded=  53 generated= 160 lev_calls= 53/64 cost=5.979 time=35.77 ms
+==========================================================================================
+TC4 partial overlap
+  A1  B1  ALIGN   d=0.739  different
+  A2  B2  ALIGN   d=0.769  different
+  A3  B3  ALIGN   d=0.000  PLAGIARISED
+  A4  B4  ALIGN   d=0.783  different
+  A5  B5  ALIGN   d=0.091  PLAGIARISED
+  A6  B6  ALIGN   d=0.727  different
+  A7  B7  ALIGN   d=0.106  PLAGIARISED
+  A8  B8  ALIGN   d=0.765  different
+  total cost = 3.981, mean aligned distance = 0.498, flagged fraction of B = 0.38
+  h0: expanded=  68 generated= 197 lev_calls= 64/64 cost=3.981 time=39.27 ms
+  h1: expanded=  32 generated=  97 lev_calls= 32/64 cost=3.981 time=18.99 ms
+  h2: expanded=  32 generated=  97 lev_calls= 32/64 cost=3.981 time=19.00 ms
+==========================================================================================
+TC5 sentence deleted + inserted
+  A1  B1  ALIGN   d=0.000  PLAGIARISED
+  A2  B2  ALIGN   d=0.000  PLAGIARISED
+  A3  B3  ALIGN   d=0.000  PLAGIARISED
+  A4  B-  SKIP_A  d=  -    unmatched
+  A5  B4  ALIGN   d=0.000  PLAGIARISED
+  A6  B5  ALIGN   d=0.000  PLAGIARISED
+  A-  B6  SKIP_B  d=  -    unmatched
+  A7  B7  ALIGN   d=0.000  PLAGIARISED
+  A8  B8  ALIGN   d=0.000  PLAGIARISED
+  total cost = 1.000, mean aligned distance = 0.000, flagged fraction of B = 0.88
+  h0: expanded=  28 generated=  85 lev_calls= 28/64 cost=1.000 time=18.84 ms
+  h1: expanded=  18 generated=  55 lev_calls= 18/64 cost=1.000 time=12.32 ms
+  h2: expanded=  17 generated=  52 lev_calls= 17/64 cost=1.000 time=11.55 ms
+
+Scaling study on synthetic documents (mean of 3 seeds)
+   n heur  expanded  lev calls   pairs        ms
+  10   h0        65         62      90      28.2
+  10   h1        32         32      90      14.4
+  10   h2        31         31      90      14.0
+  20   h0       136        136     387      74.0
+  20   h1        69         69     387      38.6
+  20   h2        69         69     387      38.0
+  40   h0       667        667    1613     298.0
+  40   h1       333        333    1613     154.7
+  40   h2       333        333    1613     143.7
+  80   h0      2655       2655    6400    1160.2
+  80   h1      1328       1328    6400     669.6
+  80   h2      1328       1328    6400     625.2

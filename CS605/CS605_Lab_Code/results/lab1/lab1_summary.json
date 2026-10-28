@@ -1,0 +1,186 @@
+{
+  "Missionaries & Cannibals": {
+    "raw_states": 32,
+    "valid_states": 20,
+    "reachable": 16,
+    "dead_ends": 0,
+    "num_solution_paths": 4,
+    "solution_lengths": [
+      11
+    ],
+    "BFS": {
+      "length": 11,
+      "expanded": 13,
+      "generated": 15,
+      "max_frontier": 3,
+      "explored": 14,
+      "ms": 0.2253159999838772,
+      "peak_kib": 6.4921875,
+      "path": [
+        "0M2C L->R",
+        "0M1C R->L",
+        "0M2C L->R",
+        "0M1C R->L",
+        "2M0C L->R",
+        "1M1C R->L",
+        "2M0C L->R",
+        "0M1C R->L",
+        "0M2C L->R",
+        "0M1C R->L",
+        "0M2C L->R"
+      ]
+    },
+    "DFS": {
+      "length": 11,
+      "expanded": 12,
+      "generated": 15,
+      "max_frontier": 3,
+      "explored": 12,
+      "ms": 0.21772900001337803,
+      "peak_kib": 4.689453125,
+      "path": [
+        "0M2C L->R",
+        "0M1C R->L",
+        "0M2C L->R",
+        "0M1C R->L",
+        "2M0C L->R",
+        "1M1C R->L",
+        "2M0C L->R",
+        "0M1C R->L",
+        "0M2C L->R",
+        "0M1C R->L",
+        "0M2C L->R"
+      ]
+    }
+  },
+  "Rabbit Leap": {
+    "raw_states": 140,
+    "valid_states": null,
+    "reachable": 72,
+    "dead_ends": 13,
+    "num_solution_paths": 2,
+    "solution_lengths": [
+      15
+    ],
+    "BFS": {
+      "length": 15,
+      "expanded": 70,
+      "generated": 72,
+      "max_frontier": 8,
+      "explored": 71,
+      "ms": 0.7228659999896081,
+      "peak_kib": 13.10546875,
+      "path": [
+        "E@2->3 (step)",
+        "W@4->2 (jump)",
+        "W@5->4 (step)",
+        "E@3->5 (jump)",
+        "E@1->3 (jump)",
+        "E@0->1 (step)",
+        "W@2->0 (jump)",
+        "W@4->2 (jump)",
+        "W@6->4 (jump)",
+        "E@5->6 (step)",
+        "E@3->5 (jump)",
+        "E@1->3 (jump)",
+        "W@2->1 (step)",
+        "W@4->2 (jump)",
+        "E@3->4 (step)"
+      ]
+    },
+    "DFS": {
+      "length": 15,
+      "expanded": 33,
+      "generated": 40,
+      "max_frontier": 8,
+      "explored": 33,
+      "ms": 0.4838319999862506,
+      "peak_kib": 8.998046875,
+      "path": [
+        "E@2->3 (step)",
+        "W@4->2 (jump)",
+        "W@5->4 (step)",
+        "E@3->5 (jump)",
+        "E@1->3 (jump)",
+        "E@0->1 (step)",
+        "W@2->0 (jump)",
+        "W@4->2 (jump)",
+        "W@6->4 (jump)",
+        "E@5->6 (step)",
+        "E@3->5 (jump)",
+        "E@1->3 (jump)",
+        "W@2->1 (step)",
+        "W@4->2 (jump)",
+        "E@3->4 (step)"
+      ]
+    }
+  },
+  "rabbit_scaling": [
+    {
+      "k": 1,
+      "raw": 6,
+      "reach": 6,
+      "length": 3,
+      "bfs_exp": 4,
+      "bfs_front": 2,
+      "dfs_exp": 3,
+      "dfs_front": 2,
+      "dfs_len": 3
+    },
+    {
+      "k": 2,
+      "raw": 30,
+      "reach": 23,
+      "length": 8,
+      "bfs_exp": 21,
+      "bfs_front": 4,
+      "dfs_exp": 13,
+      "dfs_front": 6,
+      "dfs_len": 8
+    },
+    {
+      "k": 3,
+      "raw": 140,
+      "reach": 72,
+      "length": 15,
+      "bfs_exp": 70,
+      "bfs_front": 8,
+      "dfs_exp": 33,
+      "dfs_front": 8,
+      "dfs_len": 15
+    },
+    {
+      "k": 4,
+      "raw": 630,
+      "reach": 195,
+      "length": 24,
+      "bfs_exp": 193,
+      "bfs_front": 16,
+      "dfs_exp": 80,
+      "dfs_front": 13,
+      "dfs_len": 24
+    },
+    {
+      "k": 5,
+      "raw": 2772,
+      "reach": 476,
+      "length": 35,
+      "bfs_exp": 474,
+      "bfs_front": 24,
+      "dfs_exp": 163,
+      "dfs_front": 16,
+      "dfs_len": 35
+    },
+    {
+      "k": 6,
+      "raw": 12012,
+      "reach": 1089,
+      "length": 48,
+      "bfs_exp": 1087,
+      "bfs_front": 40,
+      "dfs_exp": 349,
+      "dfs_front": 23,
+      "dfs_len": 48
+    }
+  ]
+}

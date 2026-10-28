@@ -1,0 +1,658 @@
+{
+  "test_cases": {
+    "TC1 identical": {
+      "pairs": [
+        {
+          "action": "ALIGN",
+          "i": 0,
+          "j": 0,
+          "dist": 0.0,
+          "label": "PLAGIARISED",
+          "a": "Stepwells are deep structures in which water is reached by descending a long series of steps.",
+          "b": "Stepwells are deep structures in which water is reached by descending a long series of steps."
+        },
+        {
+          "action": "ALIGN",
+          "i": 1,
+          "j": 1,
+          "dist": 0.0,
+          "label": "PLAGIARISED",
+          "a": "They were built across western India, with Gujarat and Rajasthan holding the finest examples.",
+          "b": "They were built across western India, with Gujarat and Rajasthan holding the finest examples."
+        },
+        {
+          "action": "ALIGN",
+          "i": 2,
+          "j": 2,
+          "dist": 0.0,
+          "label": "PLAGIARISED",
+          "a": "The wells stored monsoon rain so that villages had water through the dry months.",
+          "b": "The wells stored monsoon rain so that villages had water through the dry months."
+        },
+        {
+          "action": "ALIGN",
+          "i": 3,
+          "j": 3,
+          "dist": 0.0,
+          "label": "PLAGIARISED",
+          "a": "Many stepwells were commissioned by queens and wealthy merchants as acts of charity.",
+          "b": "Many stepwells were commissioned by queens and wealthy merchants as acts of charity."
+        },
+        {
+          "action": "ALIGN",
+          "i": 4,
+          "j": 4,
+          "dist": 0.0,
+          "label": "PLAGIARISED",
+          "a": "Their walls are often carved with gods, dancers and floral patterns.",
+          "b": "Their walls are often carved with gods, dancers and floral patterns."
+        },
+        {
+          "action": "ALIGN",
+          "i": 5,
+          "j": 5,
+          "dist": 0.0,
+          "label": "PLAGIARISED",
+          "a": "Because the air near the water stays cool, travellers rested there during hot afternoons.",
+          "b": "Because the air near the water stays cool, travellers rested there during hot afternoons."
+        },
+        {
+          "action": "ALIGN",
+          "i": 6,
+          "j": 6,
+          "dist": 0.0,
+          "label": "PLAGIARISED",
+          "a": "During the colonial period many wells were closed because officials considered them unhygienic.",
+          "b": "During the colonial period many wells were closed because officials considered them unhygienic."
+        },
+        {
+          "action": "ALIGN",
+          "i": 7,
+          "j": 7,
+          "dist": 0.0,
+          "label": "PLAGIARISED",
+          "a": "Today several stepwells have been restored and attract visitors from around the world.",
+          "b": "Today several stepwells have been restored and attract visitors from around the world."
+        }
+      ],
+      "mean_dist": 0.0,
+      "flagged_ratio": 1.0,
+      "search": {
+        "h0": {
+          "cost": 0.0,
+          "expanded": 8,
+          "generated": 25,
+          "lev_calls": 8,
+          "total_pairs": 64,
+          "seconds": 0.005478205999963848,
+          "plagiarism_ratio": 1.0
+        },
+        "h1": {
+          "cost": 0.0,
+          "expanded": 8,
+          "generated": 25,
+          "lev_calls": 8,
+          "total_pairs": 64,
+          "seconds": 0.005685965999987275,
+          "plagiarism_ratio": 1.0
+        },
+        "h2": {
+          "cost": 0.0,
+          "expanded": 8,
+          "generated": 25,
+          "lev_calls": 8,
+          "total_pairs": 64,
+          "seconds": 0.0056137950000447745,
+          "plagiarism_ratio": 1.0
+        }
+      }
+    },
+    "TC2 slightly modified": {
+      "pairs": [
+        {
+          "action": "ALIGN",
+          "i": 0,
+          "j": 0,
+          "dist": 0.16304347826086957,
+          "label": "PLAGIARISED",
+          "a": "Stepwells are deep structures in which water is reached by descending a long series of steps.",
+          "b": "Stepwells are deep structures where water is reached by going down a long series of steps."
+        },
+        {
+          "action": "ALIGN",
+          "i": 1,
+          "j": 1,
+          "dist": 0.1827956989247312,
+          "label": "PLAGIARISED",
+          "a": "They were built across western India, with Gujarat and Rajasthan holding the finest examples.",
+          "b": "They were constructed across western India, and Gujarat and Rajasthan hold the finest examples."
+        },
+        {
+          "action": "ALIGN",
+          "i": 2,
+          "j": 2,
+          "dist": 0.11392405063291139,
+          "label": "PLAGIARISED",
+          "a": "The wells stored monsoon rain so that villages had water through the dry months.",
+          "b": "The wells stored the monsoon rain so villages had water through the dry months."
+        },
+        {
+          "action": "ALIGN",
+          "i": 3,
+          "j": 3,
+          "dist": 0.26506024096385544,
+          "label": "PLAGIARISED",
+          "a": "Many stepwells were commissioned by queens and wealthy merchants as acts of charity.",
+          "b": "Many stepwells were commissioned by wealthy merchants and queens as acts of charity."
+        },
+        {
+          "action": "ALIGN",
+          "i": 4,
+          "j": 4,
+          "dist": 0.2535211267605634,
+          "label": "PLAGIARISED",
+          "a": "Their walls are often carved with gods, dancers and floral patterns.",
+          "b": "Their walls are frequently carved with dancers, gods and floral patterns."
+        },
+        {
+          "action": "ALIGN",
+          "i": 5,
+          "j": 5,
+          "dist": 0.13793103448275862,
+          "label": "PLAGIARISED",
+          "a": "Because the air near the water stays cool, travellers rested there during hot afternoons.",
+          "b": "Since the air near the water stays cool, travellers rested there in the hot afternoons."
+        },
+        {
+          "action": "ALIGN",
+          "i": 6,
+          "j": 6,
+          "dist": 0.20212765957446807,
+          "label": "PLAGIARISED",
+          "a": "During the colonial period many wells were closed because officials considered them unhygienic.",
+          "b": "In the colonial period many wells were closed as officials thought them unhygienic."
+        },
+        {
+          "action": "ALIGN",
+          "i": 7,
+          "j": 7,
+          "dist": 0.16279069767441862,
+          "label": "PLAGIARISED",
+          "a": "Today several stepwells have been restored and attract visitors from around the world.",
+          "b": "Today a number of stepwells have been restored and draw visitors from around the world."
+        }
+      ],
+      "mean_dist": 0.18514924840932204,
+      "flagged_ratio": 1.0,
+      "search": {
+        "h0": {
+          "cost": 1.4811939872745763,
+          "expanded": 28,
+          "generated": 85,
+          "lev_calls": 28,
+          "total_pairs": 64,
+          "seconds": 0.02027156499997318,
+          "plagiarism_ratio": 1.0
+        },
+        "h1": {
+          "cost": 1.4811939872745763,
+          "expanded": 16,
+          "generated": 49,
+          "lev_calls": 16,
+          "total_pairs": 64,
+          "seconds": 0.011314362999996774,
+          "plagiarism_ratio": 1.0
+        },
+        "h2": {
+          "cost": 1.4811939872745763,
+          "expanded": 16,
+          "generated": 49,
+          "lev_calls": 16,
+          "total_pairs": 64,
+          "seconds": 0.011167955000018992,
+          "plagiarism_ratio": 1.0
+        }
+      }
+    },
+    "TC3 completely different": {
+      "pairs": [
+        {
+          "action": "ALIGN",
+          "i": 0,
+          "j": 0,
+          "dist": 0.6956521739130435,
+          "label": "different",
+          "a": "Stepwells are deep structures in which water is reached by descending a long series of steps.",
+          "b": "Good filter coffee begins with freshly roasted beans and clean, soft water."
+        },
+        {
+          "action": "ALIGN",
+          "i": 1,
+          "j": 1,
+          "dist": 0.75,
+          "label": "different",
+          "a": "They were built across western India, with Gujarat and Rajasthan holding the finest examples.",
+          "b": "The grind should be medium fine so that the decoction drips slowly through the upper chamber."
+        },
+        {
+          "action": "ALIGN",
+          "i": 2,
+          "j": 2,
+          "dist": 0.8,
+          "label": "different",
+          "a": "The wells stored monsoon rain so that villages had water through the dry months.",
+          "b": "Chicory is sometimes added to give the brew more body and a slightly bitter edge."
+        },
+        {
+          "action": "ALIGN",
+          "i": 3,
+          "j": 3,
+          "dist": 0.7590361445783133,
+          "label": "different",
+          "a": "Many stepwells were commissioned by queens and wealthy merchants as acts of charity.",
+          "b": "Milk is boiled separately and poured from a height to create a light froth."
+        },
+        {
+          "action": "ALIGN",
+          "i": 4,
+          "j": 4,
+          "dist": 0.7088607594936709,
+          "label": "different",
+          "a": "Their walls are often carved with gods, dancers and floral patterns.",
+          "b": "The drink is traditionally served in a steel tumbler resting inside a wide bowl."
+        },
+        {
+          "action": "ALIGN",
+          "i": 5,
+          "j": 5,
+          "dist": 0.7701149425287356,
+          "label": "different",
+          "a": "Because the air near the water stays cool, travellers rested there during hot afternoons.",
+          "b": "Pouring the coffee between the tumbler and the bowl cools it and mixes the sugar."
+        },
+        {
+          "action": "ALIGN",
+          "i": 6,
+          "j": 6,
+          "dist": 0.7659574468085106,
+          "label": "different",
+          "a": "During the colonial period many wells were closed because officials considered them unhygienic.",
+          "b": "Many families in the south prepare the decoction every morning before sunrise."
+        },
+        {
+          "action": "ALIGN",
+          "i": 7,
+          "j": 7,
+          "dist": 0.7294117647058823,
+          "label": "different",
+          "a": "Today several stepwells have been restored and attract visitors from around the world.",
+          "b": "Small cafes in Chennai and Bengaluru have made this ritual famous across the country."
+        }
+      ],
+      "mean_dist": 0.7473791540035195,
+      "flagged_ratio": 0.0,
+      "search": {
+        "h0": {
+          "cost": 5.979033232028156,
+          "expanded": 80,
+          "generated": 209,
+          "lev_calls": 64,
+          "total_pairs": 64,
+          "seconds": 0.044409435000034136,
+          "plagiarism_ratio": 0.0
+        },
+        "h1": {
+          "cost": 5.979033232028156,
+          "expanded": 53,
+          "generated": 160,
+          "lev_calls": 53,
+          "total_pairs": 64,
+          "seconds": 0.03525792799996452,
+          "plagiarism_ratio": 0.0
+        },
+        "h2": {
+          "cost": 5.979033232028156,
+          "expanded": 53,
+          "generated": 160,
+          "lev_calls": 53,
+          "total_pairs": 64,
+          "seconds": 0.03577474999997321,
+          "plagiarism_ratio": 0.0
+        }
+      }
+    },
+    "TC4 partial overlap": {
+      "pairs": [
+        {
+          "action": "ALIGN",
+          "i": 0,
+          "j": 0,
+          "dist": 0.7391304347826086,
+          "label": "different",
+          "a": "Stepwells are deep structures in which water is reached by descending a long series of steps.",
+          "b": "Water management in dry regions has always depended on local engineering."
+        },
+        {
+          "action": "ALIGN",
+          "i": 1,
+          "j": 1,
+          "dist": 0.7692307692307693,
+          "label": "different",
+          "a": "They were built across western India, with Gujarat and Rajasthan holding the finest examples.",
+          "b": "Villages in Kutch dug ponds and lined them with clay to slow seepage."
+        },
+        {
+          "action": "ALIGN",
+          "i": 2,
+          "j": 2,
+          "dist": 0.0,
+          "label": "PLAGIARISED",
+          "a": "The wells stored monsoon rain so that villages had water through the dry months.",
+          "b": "The wells stored monsoon rain so that villages had water through the dry months."
+        },
+        {
+          "action": "ALIGN",
+          "i": 3,
+          "j": 3,
+          "dist": 0.7831325301204819,
+          "label": "different",
+          "a": "Many stepwells were commissioned by queens and wealthy merchants as acts of charity.",
+          "b": "Farmers also built small check dams across seasonal streams."
+        },
+        {
+          "action": "ALIGN",
+          "i": 4,
+          "j": 4,
+          "dist": 0.09090909090909091,
+          "label": "PLAGIARISED",
+          "a": "Their walls are often carved with gods, dancers and floral patterns.",
+          "b": "Their walls are often carved with gods, dancers and floral motifs."
+        },
+        {
+          "action": "ALIGN",
+          "i": 5,
+          "j": 5,
+          "dist": 0.7272727272727273,
+          "label": "different",
+          "a": "Because the air near the water stays cool, travellers rested there during hot afternoons.",
+          "b": "Modern pipelines from the Narmada canal have reduced the reliance on these older systems."
+        },
+        {
+          "action": "ALIGN",
+          "i": 6,
+          "j": 6,
+          "dist": 0.10638297872340426,
+          "label": "PLAGIARISED",
+          "a": "During the colonial period many wells were closed because officials considered them unhygienic.",
+          "b": "During the colonial era many wells were shut because officials considered them unhygienic."
+        },
+        {
+          "action": "ALIGN",
+          "i": 7,
+          "j": 7,
+          "dist": 0.7647058823529411,
+          "label": "different",
+          "a": "Today several stepwells have been restored and attract visitors from around the world.",
+          "b": "Engineers now study the old designs for ideas about sustainable storage."
+        }
+      ],
+      "mean_dist": 0.49759555167400293,
+      "flagged_ratio": 0.375,
+      "search": {
+        "h0": {
+          "cost": 3.980764413392023,
+          "expanded": 68,
+          "generated": 197,
+          "lev_calls": 64,
+          "total_pairs": 64,
+          "seconds": 0.03926568299999644,
+          "plagiarism_ratio": 0.375
+        },
+        "h1": {
+          "cost": 3.980764413392023,
+          "expanded": 32,
+          "generated": 97,
+          "lev_calls": 32,
+          "total_pairs": 64,
+          "seconds": 0.0189908360000004,
+          "plagiarism_ratio": 0.375
+        },
+        "h2": {
+          "cost": 3.980764413392023,
+          "expanded": 32,
+          "generated": 97,
+          "lev_calls": 32,
+          "total_pairs": 64,
+          "seconds": 0.019002354999997806,
+          "plagiarism_ratio": 0.375
+        }
+      }
+    },
+    "TC5 sentence deleted + inserted": {
+      "pairs": [
+        {
+          "action": "ALIGN",
+          "i": 0,
+          "j": 0,
+          "dist": 0.0,
+          "label": "PLAGIARISED",
+          "a": "Stepwells are deep structures in which water is reached by descending a long series of steps.",
+          "b": "Stepwells are deep structures in which water is reached by descending a long series of steps."
+        },
+        {
+          "action": "ALIGN",
+          "i": 1,
+          "j": 1,
+          "dist": 0.0,
+          "label": "PLAGIARISED",
+          "a": "They were built across western India, with Gujarat and Rajasthan holding the finest examples.",
+          "b": "They were built across western India, with Gujarat and Rajasthan holding the finest examples."
+        },
+        {
+          "action": "ALIGN",
+          "i": 2,
+          "j": 2,
+          "dist": 0.0,
+          "label": "PLAGIARISED",
+          "a": "The wells stored monsoon rain so that villages had water through the dry months.",
+          "b": "The wells stored monsoon rain so that villages had water through the dry months."
+        },
+        {
+          "action": "SKIP_A",
+          "i": 3,
+          "j": null,
+          "dist": null,
+          "label": "unmatched",
+          "a": "Many stepwells were commissioned by queens and wealthy merchants as acts of charity.",
+          "b": ""
+        },
+        {
+          "action": "ALIGN",
+          "i": 4,
+          "j": 3,
+          "dist": 0.0,
+          "label": "PLAGIARISED",
+          "a": "Their walls are often carved with gods, dancers and floral patterns.",
+          "b": "Their walls are often carved with gods, dancers and floral patterns."
+        },
+        {
+          "action": "ALIGN",
+          "i": 5,
+          "j": 4,
+          "dist": 0.0,
+          "label": "PLAGIARISED",
+          "a": "Because the air near the water stays cool, travellers rested there during hot afternoons.",
+          "b": "Because the air near the water stays cool, travellers rested there during hot afternoons."
+        },
+        {
+          "action": "SKIP_B",
+          "i": null,
+          "j": 5,
+          "dist": null,
+          "label": "unmatched",
+          "a": "",
+          "b": "Some of the deepest wells descend more than seven storeys below ground."
+        },
+        {
+          "action": "ALIGN",
+          "i": 6,
+          "j": 6,
+          "dist": 0.0,
+          "label": "PLAGIARISED",
+          "a": "During the colonial period many wells were closed because officials considered them unhygienic.",
+          "b": "During the colonial period many wells were closed because officials considered them unhygienic."
+        },
+        {
+          "action": "ALIGN",
+          "i": 7,
+          "j": 7,
+          "dist": 0.0,
+          "label": "PLAGIARISED",
+          "a": "Today several stepwells have been restored and attract visitors from around the world.",
+          "b": "Today several stepwells have been restored and attract visitors from around the world."
+        }
+      ],
+      "mean_dist": 0.0,
+      "flagged_ratio": 0.875,
+      "search": {
+        "h0": {
+          "cost": 1.0,
+          "expanded": 28,
+          "generated": 85,
+          "lev_calls": 28,
+          "total_pairs": 64,
+          "seconds": 0.018843552999953772,
+          "plagiarism_ratio": 0.875
+        },
+        "h1": {
+          "cost": 1.0,
+          "expanded": 18,
+          "generated": 55,
+          "lev_calls": 18,
+          "total_pairs": 64,
+          "seconds": 0.012318558999993456,
+          "plagiarism_ratio": 0.875
+        },
+        "h2": {
+          "cost": 1.0,
+          "expanded": 17,
+          "generated": 52,
+          "lev_calls": 17,
+          "total_pairs": 64,
+          "seconds": 0.011549433999960002,
+          "plagiarism_ratio": 0.875
+        }
+      }
+    }
+  },
+  "scaling": [
+    {
+      "n": 10,
+      "h": "h0",
+      "expanded": 65.33333333333333,
+      "lev_calls": 61.666666666666664,
+      "pairs": 90.0,
+      "ms": 28.185970666659916,
+      "cost": 2.851743530461524
+    },
+    {
+      "n": 10,
+      "h": "h1",
+      "expanded": 32.333333333333336,
+      "lev_calls": 32.0,
+      "pairs": 90.0,
+      "ms": 14.432949000005616,
+      "cost": 2.851743530461524
+    },
+    {
+      "n": 10,
+      "h": "h2",
+      "expanded": 31.333333333333332,
+      "lev_calls": 31.0,
+      "pairs": 90.0,
+      "ms": 14.026741000028172,
+      "cost": 2.851743530461524
+    },
+    {
+      "n": 20,
+      "h": "h0",
+      "expanded": 136.33333333333334,
+      "lev_calls": 136.33333333333334,
+      "pairs": 386.6666666666667,
+      "ms": 73.97618566665187,
+      "cost": 3.510764306836144
+    },
+    {
+      "n": 20,
+      "h": "h1",
+      "expanded": 69.33333333333333,
+      "lev_calls": 69.33333333333333,
+      "pairs": 386.6666666666667,
+      "ms": 38.60356433333815,
+      "cost": 3.510764306836144
+    },
+    {
+      "n": 20,
+      "h": "h2",
+      "expanded": 69.33333333333333,
+      "lev_calls": 69.33333333333333,
+      "pairs": 386.6666666666667,
+      "ms": 38.042840333332606,
+      "cost": 3.510764306836144
+    },
+    {
+      "n": 40,
+      "h": "h0",
+      "expanded": 667.0,
+      "lev_calls": 667.0,
+      "pairs": 1613.3333333333333,
+      "ms": 297.9559419999873,
+      "cost": 7.638692151908138
+    },
+    {
+      "n": 40,
+      "h": "h1",
+      "expanded": 332.6666666666667,
+      "lev_calls": 332.6666666666667,
+      "pairs": 1613.3333333333333,
+      "ms": 154.65487766666305,
+      "cost": 7.638692151908138
+    },
+    {
+      "n": 40,
+      "h": "h2",
+      "expanded": 332.6666666666667,
+      "lev_calls": 332.6666666666667,
+      "pairs": 1613.3333333333333,
+      "ms": 143.66694666667476,
+      "cost": 7.638692151908138
+    },
+    {
+      "n": 80,
+      "h": "h0",
+      "expanded": 2655.3333333333335,
+      "lev_calls": 2654.6666666666665,
+      "pairs": 6400.0,
+      "ms": 1160.2121433333157,
+      "cost": 16.29012510778428
+    },
+    {
+      "n": 80,
+      "h": "h1",
+      "expanded": 1328.3333333333333,
+      "lev_calls": 1328.3333333333333,
+      "pairs": 6400.0,
+      "ms": 669.5758459999865,
+      "cost": 16.29012510778428
+    },
+    {
+      "n": 80,
+      "h": "h2",
+      "expanded": 1328.3333333333333,
+      "lev_calls": 1328.3333333333333,
+      "pairs": 6400.0,
+      "ms": 625.1629886666782,
+      "cost": 16.29012510778428
+    }
+  ]
+}
